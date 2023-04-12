@@ -6,6 +6,11 @@ let package = Package(
     products: [
         .library(
             name: "newskit-themes",
-            targets: []),
+            targets: ["MyPackage"]),
+    ],
+    targets: [
+        .target(
+            name: "MyPackage",
+            path: "sources"),
     ]
 )
