@@ -1,19 +1,14 @@
+// swift-tools-version:5.7
+import PackageDescription
 
-    import PackageDescription
-
-    let package = Package(
-        name: "@newskit-themes/newskit",
-        platforms: [
-            .macOS(.v12),
-            .iOS(.v15),
-        ],
-        products: [
-            .library(name: "themes", targets: ["themes"]),
-        ],
-        targets: [
-            .target(name: "themes", path: "sources"),
-        ]
-        version: "0.0.1",
-        license: "MIT"
-    )
-  
+let package = Package(
+  name: "newskit-themes",
+  dependencies: [
+    .package(url: "https://github.com/Vanals/swift-package-themes.git", branch: "main"),
+  ],
+  targets: [
+    .target(name: "MyTool", dependencies: [
+      .product(name: "SwiftSyntax", package: "swift-syntax"),
+    ]),
+  ]
+)
