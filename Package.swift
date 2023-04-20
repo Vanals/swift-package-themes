@@ -3,6 +3,7 @@ import PackageDescription
 
 let package = Package(
     name: "newskit-themes",
+    version: "0.0.1",
     products: [
         .library(
             name: "newskit-themes",
@@ -10,7 +11,10 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "MyPackage",
-            path: "sources"),
+            name: "newskit",
+            path: "newskit"),
+        .target(
+            name: "the-sun",
+            path: "the-sun"),
     ]
 )
