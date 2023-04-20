@@ -18,9 +18,11 @@ let package = Package(
     targets: [
         .target(
             name: "newskit",
+            version: "1.0.1"
         ),
         .target(
             name: "the-sun",
+            version: "2.5.0"
         ),
     ]
 )
