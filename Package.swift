@@ -12,7 +12,7 @@ let package = Package(
         .library(
             name: "the-sun",
             targets: ["the-sun"],
-        ),
+        )
     ],
     targets: [
         .target(
@@ -20,6 +20,6 @@ let package = Package(
         ),
         .target(
             name: "the-sun"
-        ),
+        )
     ]
 )
