@@ -4,6 +4,7 @@ import PackageDescription
 let package = Package(
     name: "newskit-themes",
     version: "0.0.1",
+    platforms: [.iOS(.v12)]
     products: [
         .library(
             name: "newskit",
