@@ -7,11 +7,11 @@ let package = Package(
     products: [
         .library(
             name: "newskit",
-            targets: ["newskit"],
+            targets: ["newskit"]
         ),
         .library(
             name: "the-sun",
-            targets: ["the-sun"],
+            targets: ["the-sun"]
         )
     ],
     targets: [
