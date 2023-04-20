@@ -3,26 +3,23 @@ import PackageDescription
 
 let package = Package(
     name: "newskit-themes",
-    version: "0.0.1",
     platforms: [.iOS(.v12)],
     products: [
         .library(
             name: "newskit",
-            targets: ["newskit"],
+            targets: ["newskit"]
         ),
         .library(
             name: "the-sun",
-            targets: ["the-sun"],
-        ),
+            targets: ["the-sun"]
+        )
     ],
     targets: [
         .target(
-            name: "newskit",
-            version: "1.0.1"
+            name: "newskit"
         ),
         .target(
-            name: "the-sun",
-            version: "2.5.0"
-        ),
+            name: "the-sun"
+        )
     ]
 )
