@@ -6,8 +6,13 @@ let package = Package(
     version: "0.0.1",
     products: [
         .library(
-            name: "newskit-themes",
-            targets: ["MyPackage"]),
+                    name: "newskit",
+                    targets: ["newskit"]
+                ),
+                .library(
+                    name: "the-sun",
+                    targets: ["the-sun"]
+                ),
     ],
     targets: [
         .target(
